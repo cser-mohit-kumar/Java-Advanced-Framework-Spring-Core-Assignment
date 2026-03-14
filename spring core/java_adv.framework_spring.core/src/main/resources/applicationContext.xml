@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="project1"
+		class="com.capgemini.software_devlopment_testing.java_adv.framework_spring.core.entity.Project">
+
+		<property name="id" value="1" />
+		<property name="name" value="Airline Reservation" />
+		<property name="description" value="Java Web Application Project" />
+
+	</bean>
+
+	<bean id="student1"
+		class="com.capgemini.software_devlopment_testing.java_adv.framework_spring.core.entity.Student">
+
+		<property name="id" value="1" />
+		<property name="name" value="Aarya" />
+		<property name="mailId" value="aarya@gmail.com" />
+		<property name="contactNumber" value="9530068726" />
+		<property name="project" ref="project1" />
+
+	</bean>
+
+</beans>
